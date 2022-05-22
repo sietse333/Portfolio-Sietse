@@ -22,18 +22,77 @@ section:nth-of-type(2){
     background-color: rgb(39, 4, 4);
     width: 100%;
     height: 100vh;
+    position: relative;
+
 }
 /* Me section */
 section:nth-of-type(3){
     background-color: rgb(7, 3, 56);
     width: 100%;
     height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 footer{
     background-color: rgb(39, 4, 43);
     width: 100%;
     height: 100vh;
+    position: relative;
+
+}
+
+section > article:first-of-type{
+    background-color: bisque;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > article:nth-of-type(2){
+    background-color: rgb(197, 127, 40);
+    width: 50%;
+    height: 100%;
+  
+}
+
+.fotome{
+    width: 50%;
+    height: 50%;
+    border-radius: 20em;
+}
+
+.linkcontainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: 0;
+    transition: .5s ease-in-out;
+    margin-bottom: 1em;
+}
+article > h2{
+    font-size: 4em;
+    color: white;
+}
+
+article > p{
+    font-size: 1em;
+    color: white;
+}
+
+
+#worklink2{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+.linkcontainer:hover{
+    transform:scale(1.3);
+    transition: .5s ease-in-out;
 }
 
 section > h1{
@@ -142,15 +201,47 @@ span:nth-of-type(10){
     100%   {opacity: 100%;}
   }
 
+
+  @media only screen and (max-width: 1200px) {
+    section:nth-of-type(3){
+        flex-direction: column;
+         position: relative;
+         display: flex;
+         justify-content: center;
+     }
+
+     section > article:first-of-type{
+        background-color: bisque;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section > article:nth-of-type(2){
+        background-color: rgb(197, 127, 40);
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+}
+
 @media only screen and (max-width: 900px) {
     .workwrapper {
         grid-template-columns: repeat(2, 1fr);
-        
     }
     section:nth-of-type(2){
         height: 100%;
         padding-bottom: 2em;
     }
+    div > a:last-of-type{
+        margin-bottom: 4em;
+    }
+
 }
 
 
@@ -162,4 +253,13 @@ span:nth-of-type(10){
         height: 100%;
         padding-bottom: 2em;
     }
+    div > a:last-of-type{
+        margin-bottom: 4em;
+    }
 }
+
+
+
+
+
+
