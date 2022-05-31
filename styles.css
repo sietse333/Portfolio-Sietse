@@ -19,7 +19,7 @@ section:first-of-type{
 }
 /* Work section */
 section:nth-of-type(2){
-    background-color: rgb(39, 4, 4);
+    background-color: rgb(15, 13, 13);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -36,10 +36,14 @@ section:nth-of-type(3){
 }
 
 footer{
-    background-color: rgb(39, 4, 43);
+    background-color: rgb(16, 2, 17);
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    place-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -65,15 +69,7 @@ section > article:nth-of-type(2){
     border-radius: 20em;
 }
 
-.linkcontainer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: 0;
-    transition: .5s ease-in-out;
-    margin-bottom: 1em;
-}
+
 article > h2{
     font-size: 3em;
     color: white;
@@ -89,11 +85,11 @@ article > p{
     color: white;
     text-decoration: none;
     font-size: 2em;
+    
 }
-.linkcontainer:hover{
-    transform:scale(1.3);
-    transition: .5s ease-in-out;
-}
+
+
+
 
 section > h1{
     color: white;
@@ -105,33 +101,48 @@ section > h1{
 section > h2{
     color: white;
     font-size: 3em;
-    margin: 0;
+    padding-top: .5em;
+    margin: 0em 0em 1em 0em;
     text-align: center;
 
 }
 
-footer > ul{
+a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+
+footer > div > ul{
     list-style-type: none;
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 75%;
     place-content: space-around;
+    font-size: 2em;
+    padding: 0;
 }
 
 footer a{
+    color: rgb(201, 201, 201);
+    font-size: 1em;
+    padding: 0.5em 0em;
 
+}
+
+footer p{
     text-decoration: none;
     color: rgb(201, 201, 201);
     font-size: 1em;
+    margin: 0;
 
 }
 
 footer h3{
     font-size: 4em;
     margin: 0;
-    padding-left: 40px;
-    padding-top: 20px;
     color: rgb(199, 199, 199);
 }
 
@@ -141,14 +152,21 @@ footer h3{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     padding-top: 2em;
+    height: 90vh;
 }
 
 div > a{
-    width: 15em;
-    height: 15em;
-    background-color: aqua;
+    width: 18em;
+    height: 18em;
     transition: .5s ease-in-out;
+    box-shadow: 1px 3px 13px white;
+    border-radius: 1em;
 }
+
+div > a:last-of-type{
+    box-shadow: none;
+}
+
 div > a:hover{
     transition: .5s ease-in-out;
     transform:scale(1.1);
@@ -162,12 +180,54 @@ div > a:hover{
     font-size: 2em;
     margin-bottom: 1em;
     transition: .5s ease-in-out;
+    display: inline-block;
 }
 
-#worklink:hover{
-    transform:scale(1.3);
-    transition: .5s ease-in-out;
+#worklink::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: 300ms;
 }
+
+#worklink:hover::after {
+    width: 100%;
+  }
+
+
+#worklink3{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#worklink3::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+#worklink3:hover::after {
+    width: 100%;
+  }
+
+.linkcontainer{
+    position: absolute;
+    bottom: 0px;
+    font-size: 2em;
+    margin-bottom: 1em;
+    transition: .5s ease-in-out;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
 
 span:first-of-type{
     animation-name: letter;
@@ -250,9 +310,6 @@ span:nth-of-type(10){
         height: 100%;
 
     }
-
-
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -266,13 +323,13 @@ span:nth-of-type(10){
     div > a:last-of-type{
         margin-bottom: 4em;
     }
-
 }
 
 
 @media only screen and (max-width: 600px) {
     .workwrapper {
         grid-template-columns: repeat(1, 1fr);
+        height: 100%;
     }
     section:nth-of-type(2){
         height: 100%;
