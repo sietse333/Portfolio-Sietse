@@ -27,12 +27,12 @@ section:nth-of-type(2){
 }
 /* Me section */
 section:nth-of-type(3){
-    background-color: rgb(7, 3, 56);
+    background-color: rgb(13, 10, 50);
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 footer{
@@ -49,7 +49,7 @@ footer{
 
 section > article:first-of-type{
     background-color: bisque;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -126,9 +126,14 @@ footer > div > ul{
 }
 
 footer a{
-    color: rgb(201, 201, 201);
+    color: rgb(177, 177, 177);
     font-size: 1em;
-    padding: 0.5em 0em;
+
+
+}
+
+footer a:hover{
+    color: rgb(137, 137, 137);
 
 }
 
@@ -148,18 +153,18 @@ footer h3{
 
 .workwrapper{
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     padding-top: 2em;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 div > a{
-    width: 18em;
-    height: 18em;
+    width: 15em;
+    height: 15em;
     transition: .5s ease-in-out;
-    box-shadow: 1px 3px 13px white;
+    box-shadow: 1px 1px 8px white;
     border-radius: 1em;
 }
 
@@ -196,12 +201,31 @@ div > a:hover{
     width: 100%;
   }
 
+.link{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+ 
+}
+
+.link::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+.link:hover::after {
+    width: 100%;
+  }
 
 #worklink3{
     color: white;
     list-style: none;
     text-decoration: none;
-
+ 
 }
 
 #worklink3::after{
@@ -218,16 +242,13 @@ div > a:hover{
   }
 
 .linkcontainer{
-    position: absolute;
-    bottom: 0px;
     font-size: 2em;
-    margin-bottom: 1em;
     transition: .5s ease-in-out;
+    width: 7em;
     text-align: center;
-    width: 100%;
-    display: inline-block;
+    margin: auto;
+    margin-top: 2em;
 }
-
 
 span:first-of-type{
     animation-name: letter;
@@ -288,21 +309,7 @@ span:nth-of-type(10){
 
 
   @media only screen and (max-width: 1200px) {
-    section:nth-of-type(3){
-        flex-direction: column;
-         position: relative;
-         display: flex;
-         justify-content: center;
-     }
 
-     section > article:first-of-type{
-        background-color: bisque;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
     section > article:nth-of-type(2){
         background-color: rgb(197, 127, 40);
