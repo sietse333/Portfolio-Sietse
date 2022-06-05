@@ -6,20 +6,22 @@ body{
     background-color: rgb(11, 11, 12);
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
 /* Homescreen section */
 section:first-of-type{
-    background-color: rgb(24, 75, 75);
+    background-color: rgb(209 209 209);
     width: 100%;
     height: 100vh;
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 /* Work section */
 section:nth-of-type(2){
-    background-color: rgb(15, 13, 13);
+    background-color: rgb(221 221 221);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -30,7 +32,8 @@ section:nth-of-type(2){
 }
 /* Me section */
 section:nth-of-type(3){
-    background-color: rgb(13, 10, 50);
+    background-color: rgb(209 209 209);
+    color: #282828;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -39,7 +42,7 @@ section:nth-of-type(3){
 }
 
 footer{
-    background-color: rgb(16, 2, 17);
+    background-color: rgb(18 18 18);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -76,21 +79,45 @@ section > article:nth-of-type(2){
 
 article > h2{
     font-size: 3em;
-    color: white;
+    color: #282828;
 }
 
 article > p{
     font-size: 1em;
-    color: white;
+    color: #282828;
 }
 
+.project-text{
+    text-align: center;
+    color: #282828;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: .5em;
+    font-weight: 500;
+ 
+}
 
 #worklink2{
-    color: white;
+    color: #282828;
     text-decoration: none;
+    box-shadow: none;
   
 }
 
+.paars{
+    color: #a746ff;
+    font-weight: 450;
+    animation-name: none;
+
+
+}
+
+.paars2{
+    color: #a746ff;
+    animation-name: none;
+
+
+}
 .p-mij{
     font-size: 1.5em;
     margin: .5em 5em ;
@@ -98,14 +125,14 @@ article > p{
 
 
 section > h1{
-    color: white;
+    color: #282828;
     font-size: 9em;
     margin: 0;
     text-align: center;
 }
 
 section > h2{
-    color: white;
+    color: #282828;
     font-size: 3em;
     padding-top: .5em;
     margin: 0em 0em 1em 0em;
@@ -159,24 +186,22 @@ footer h3{
 
 .workwrapper{
     display: grid;
-    grid-gap: 2rem;
+    gap: 17em 0em;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     height: 90%;
     align-content: center;
 }
 
-div > a{
-    width: 15em;
-    height: 15em;
+div > a {
+    width: 18em;
+    height: 18em;
     transition: .5s ease-in-out;
-    box-shadow: 1px 1px 8px white;
+    box-shadow: 9px 10px 15px #464646;
     border-radius: 1em;
+    text-decoration: none;
 }
 
-div > a:last-of-type{
-    box-shadow: none;
-}
 
 div > a:hover{
     transition: .5s ease-in-out;
@@ -186,7 +211,7 @@ div > a:hover{
 #worklink{
     position: absolute;
     bottom: 0px;
-    color: white;
+    color: #282828;
     text-decoration: none;
     font-size: 2em;
     margin-bottom: 1em;
@@ -197,9 +222,9 @@ div > a:hover{
 #worklink::after{
     content: '';
     width: 0px;
-    height: 1px;
+    height: 3px;
     display: block;
-    background: rgb(255, 255, 255);
+    background: #a746ff;
     transition: 300ms;
 }
 
@@ -217,9 +242,9 @@ div > a:hover{
 .link::after{
     content: '';
     width: 0px;
-    height: 1px;
+    height: 3px;
     display: block;
-    background: rgb(255, 255, 255);
+    background: #a746ff;
     transition: 300ms;
 }
 
@@ -228,18 +253,19 @@ div > a:hover{
   }
 
 #worklink3{
-    color: white;
+    color: #282828;
     list-style: none;
     text-decoration: none;
+    box-shadow: none;
  
 }
 
 #worklink3::after{
     content: '';
     width: 0px;
-    height: 1px;
+    height: 3px;
     display: block;
-    background: rgb(255, 255, 255);
+    background: #a746ff;
     transition: 300ms;
 }
 
@@ -249,7 +275,7 @@ div > a:hover{
 
   .slideshow-container h2 {
     font-size: 2em;
-    color: white;
+    color: #282828;
     text-align: center;
     margin: 0em 0em 0.5em 0em;
   }
@@ -447,12 +473,19 @@ span:nth-of-type(10){
         margin: auto;
 
     }
+    div > a {
+        width: 15em;
+        height: 15em;
+
+    }
 
 }
 
 @media only screen and (max-width: 900px) {
     .workwrapper {
+        margin-top: 2em;
         grid-template-columns: repeat(2, 1fr);
+        gap: 8em 0em;
     }
     section:nth-of-type(2){
         height: 100%;
@@ -461,12 +494,14 @@ span:nth-of-type(10){
     div > a:last-of-type{
         margin-bottom: 4em;
     }
+    
 }
 
 
 @media only screen and (max-width: 600px) {
     .workwrapper {
         grid-template-columns: repeat(1, 1fr);
+        gap: 4em 0em;
         height: 100%;
     }
     section:nth-of-type(2){
@@ -480,11 +515,9 @@ span:nth-of-type(10){
     .p-mij{
         margin: .5em .1em ;
     }
+    section:nth-of-type(3) {
+        height: 100%;
+
+    }
 
 }
-
-
-
-
-
-
