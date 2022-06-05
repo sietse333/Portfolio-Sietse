@@ -23,6 +23,9 @@ section:nth-of-type(2){
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 /* Me section */
@@ -85,11 +88,13 @@ article > p{
 #worklink2{
     color: white;
     text-decoration: none;
-    font-size: 2em;
-    
+  
 }
 
-
+.p-mij{
+    font-size: 1.5em;
+    margin: .5em 5em ;
+}
 
 
 section > h1{
@@ -157,8 +162,8 @@ footer h3{
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    padding-top: 2em;
-    /* height: 90vh; */
+    height: 90%;
+    align-content: center;
 }
 
 div > a{
@@ -242,6 +247,13 @@ div > a:hover{
     width: 100%;
   }
 
+  .slideshow-container h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 0em 0em 0.5em 0em;
+  }
+
 .linkcontainer{
     font-size: 2em;
     transition: .5s ease-in-out;
@@ -249,6 +261,10 @@ div > a:hover{
     text-align: center;
     margin: auto;
     margin-top: 2em;
+}
+
+.link{
+    width: 3em;
 }
 
 .mij-container{
@@ -298,8 +314,9 @@ div > a:hover{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     margin-top: -22px;
+    box-shadow: none;
   }
   
   /* Position the "next button" to the right */
@@ -312,26 +329,7 @@ div > a:hover{
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+
   
   /* The dots/bullets/indicators */
   .dot {
@@ -421,6 +419,9 @@ span:nth-of-type(10){
 
   @media only screen and (max-width: 1200px) {
 
+    .p-mij{
+        margin: .5em 2em ;
+    }
     
     section > article:nth-of-type(2){
         background-color: rgb(197, 127, 40);
@@ -475,6 +476,11 @@ span:nth-of-type(10){
     div > a:last-of-type{
         margin-bottom: 4em;
     }
+
+    .p-mij{
+        margin: .5em .1em ;
+    }
+
 }
 
 
