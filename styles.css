@@ -214,7 +214,6 @@ div > a:hover{
     color: #282828;
     text-decoration: none;
     font-size: 2em;
-    margin-bottom: 1em;
     transition: .5s ease-in-out;
     display: inline-block;
 }
@@ -240,10 +239,10 @@ div > a:hover{
 }
 
 .ml3{
-    font-size: 13vw;
+    font-size: 6.5em;
 }
 .ml4{
-    font-size: 7vw;
+    font-size: 2.5em;
 }
 
 .link::after{
@@ -294,7 +293,7 @@ div > a:hover{
     text-align: center;
     margin: auto;
     margin-top: 2em;
-    margin-bottom: 0.2em;
+
 }
 
 .link{
@@ -462,7 +461,7 @@ span:nth-of-type(10){
     }
     
     .mij-slide{
-        width: 95%;
+        width: 60%;
         align-self: center;
         margin: auto;
     }
@@ -521,6 +520,12 @@ span:nth-of-type(10){
 
     }
 
+    .ml3{
+        font-size: 13vw;
+    }
+    .ml4{
+        font-size: 7vw;
+    }
     
 
 }
