@@ -194,8 +194,8 @@ footer h3{
 }
 
 div > a {
-    width: 18em;
-    height: 18em;
+    width: 15em;
+    height: 15em;
     transition: .5s ease-in-out;
     box-shadow: 9px 10px 15px #464646;
     border-radius: 1em;
@@ -468,8 +468,8 @@ span:nth-of-type(10){
 
     }
     div > a {
-        width: 15em;
-        height: 15em;
+        width: 14em;
+        height: 14em;
 
     }
 
@@ -515,10 +515,10 @@ span:nth-of-type(10){
     }
 
     .ml3{
-        font-size: 15vw;
+        font-size: 13vw;
     }
     .ml4{
-        font-size: 9vw;
+        font-size: 7vw;
     }
     
 
