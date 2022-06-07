@@ -213,7 +213,7 @@ div > a:hover{
     bottom: 0px;
     color: #282828;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: .5s ease-in-out;
     display: inline-block;
     padding-bottom: .5em;
@@ -264,7 +264,7 @@ div > a:hover{
     list-style: none;
     text-decoration: none;
     box-shadow: none;
- 
+    font-size: 1em;
 }
 
 #worklink3::after{
@@ -288,7 +288,7 @@ div > a:hover{
   }
 
 .linkcontainer{
-    font-size: 2em;
+    font-size: 1.5em;
     transition: .5s ease-in-out;
     width: 7em;
     text-align: center;
@@ -517,10 +517,6 @@ span:nth-of-type(10){
     .p-mij{
         margin: .5em .1em ;
     }
-    section:nth-of-type(3) {
-        height: 100%;
-
-    }
 
     .ml3{
         font-size: 13vw;
@@ -530,4 +526,11 @@ span:nth-of-type(10){
     }
     
 
+}
+
+@media only screen and (max-width: 400px) {
+    section:nth-of-type(3) {
+        height: 100%;
+
+    }
 }
