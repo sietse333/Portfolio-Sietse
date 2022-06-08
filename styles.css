@@ -470,6 +470,7 @@ span:nth-of-type(10){
         width: 75%;
         align-self: center;
         margin: auto;
+        margin-top: 1.5em;
     }
     
     .mij-text{
