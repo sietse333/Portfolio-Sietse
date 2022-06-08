@@ -1,16 +1,17 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: rgb(11, 11, 12);
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
+
 /* Homescreen section */
-section:first-of-type{
+section:first-of-type {
     background-color: rgb(209 209 209);
     width: 100%;
     height: 100vh;
@@ -18,9 +19,12 @@ section:first-of-type{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    position: relative;
 }
+
 /* Work section */
-section:nth-of-type(2){
+section:nth-of-type(2) {
     background-color: rgb(221 221 221);
     width: 100%;
     height: 100vh;
@@ -30,8 +34,9 @@ section:nth-of-type(2){
     justify-content: center;
 
 }
+
 /* Me section */
-section:nth-of-type(3){
+section:nth-of-type(3) {
     background-color: rgb(209 209 209);
     color: #282828;
     width: 100%;
@@ -41,7 +46,7 @@ section:nth-of-type(3){
     flex-direction: column;
 }
 
-footer{
+footer {
     background-color: rgb(18 18 18);
     width: 100%;
     height: 100vh;
@@ -53,7 +58,7 @@ footer{
 
 }
 
-section > article:first-of-type{
+section>article:first-of-type {
     background-color: bisque;
     width: 100%;
     height: 100%;
@@ -63,48 +68,48 @@ section > article:first-of-type{
     flex-direction: column;
 }
 
-section > article:nth-of-type(2){
+section>article:nth-of-type(2) {
     background-color: rgb(197, 127, 40);
     width: 50%;
     height: 100%;
-  
+
 }
 
-.fotome{
+.fotome {
     width: 50%;
     height: 50%;
     border-radius: 20em;
 }
 
 
-article > h2{
+article>h2 {
     font-size: 2em;
     color: #282828;
 }
 
-article > p{
+article>p {
     font-size: 1em;
     color: #282828;
 }
 
-.project-text{
+.project-text {
     text-align: center;
     color: #282828;
     text-decoration: none;
     font-size: 1.2em;
     margin-top: .5em;
     font-weight: 500;
- 
+
 }
 
-#worklink2{
+#worklink2 {
     color: #282828;
     text-decoration: none;
     box-shadow: none;
-  
+
 }
 
-.paars{
+.paars {
     color: #a746ff;
     font-weight: 450;
     animation-name: none;
@@ -112,26 +117,27 @@ article > p{
 
 }
 
-.paars2{
+.paars2 {
     color: #a746ff;
     animation-name: none;
 
 
 }
-.p-mij{
+
+.p-mij {
     font-size: 1.3em;
-    margin: .5em 5em ;
+    margin: .5em 5em;
 }
 
 
-section > h1{
+section>h1 {
     color: #282828;
     font-size: 9em;
     margin: 0;
     text-align: center;
 }
 
-section > h2{
+section>h2 {
     color: #282828;
     font-size: 3em;
     padding-top: .5em;
@@ -140,14 +146,14 @@ section > h2{
 
 }
 
-a > img{
+a>img {
     width: 100%;
     height: 100%;
     border-radius: 1em;
 }
 
 
-footer > div > ul{
+footer>div>ul {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -158,19 +164,19 @@ footer > div > ul{
     padding: 0;
 }
 
-footer a{
+footer a {
     color: rgb(177, 177, 177);
     font-size: 1em;
 
 
 }
 
-footer a:hover{
+footer a:hover {
     color: rgb(137, 137, 137);
 
 }
 
-footer p{
+footer p {
     text-decoration: none;
     color: rgb(201, 201, 201);
     font-size: 1em;
@@ -178,13 +184,13 @@ footer p{
 
 }
 
-footer h3{
+footer h3 {
     font-size: 4em;
     margin: 0;
     color: rgb(199, 199, 199);
 }
 
-.workwrapper{
+.workwrapper {
     display: grid;
     gap: 11vh 0;
     grid-template-columns: repeat(3, 1fr);
@@ -193,7 +199,7 @@ footer h3{
     align-content: center;
 }
 
-div > a {
+div>a {
     width: 30vh;
     height: 30vh;
     transition: .5s ease-in-out;
@@ -203,12 +209,12 @@ div > a {
 }
 
 
-div > a:hover{
+div>a:hover {
     transition: .5s ease-in-out;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
-#worklink{
+#worklink {
     position: absolute;
     bottom: 0px;
     color: #282828;
@@ -219,7 +225,7 @@ div > a:hover{
     padding-bottom: .5em;
 }
 
-#worklink::after{
+#worklink::after {
     content: '';
     width: 0px;
     height: 3px;
@@ -230,23 +236,24 @@ div > a:hover{
 
 #worklink:hover::after {
     width: 100%;
-  }
+}
 
-.link{
+.link {
     color: white;
     list-style: none;
     text-decoration: none;
- 
+
 }
 
-.ml3{
+.ml3 {
     font-size: 6.5em;
 }
-.ml4{
+
+.ml4 {
     font-size: 2.5em;
 }
 
-.link::after{
+.link::after {
     content: '';
     width: 0px;
     height: 3px;
@@ -257,9 +264,9 @@ div > a:hover{
 
 .link:hover::after {
     width: 100%;
-  }
+}
 
-#worklink3{
+#worklink3 {
     color: #282828;
     list-style: none;
     text-decoration: none;
@@ -267,7 +274,7 @@ div > a:hover{
     font-size: 1em;
 }
 
-#worklink3::after{
+#worklink3::after {
     content: '';
     width: 0px;
     height: 3px;
@@ -278,16 +285,16 @@ div > a:hover{
 
 #worklink3:hover::after {
     width: 100%;
-  }
+}
 
-  .slideshow-container h2 {
+.slideshow-container h2 {
     font-size: 2em;
     color: #282828;
     text-align: center;
     margin: 0em 0em 0.5em 0em;
-  }
+}
 
-.linkcontainer{
+.linkcontainer {
     font-size: 1.5em;
     transition: .5s ease-in-out;
     width: 7em;
@@ -295,29 +302,28 @@ div > a:hover{
     margin: auto;
     margin-top: 2em;
     padding-bottom: .5em
-
 }
 
 
 
-.link{
+.link {
     width: 3em;
 }
 
-.mij-container{
+.mij-container {
     display: flex;
     flex-direction: row-reverse;
     height: 90%;
 }
 
-.mij-slide{
+.mij-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     /* height: 50%; */
 }
 
-.mij-text{
+.mij-text {
     align-self: center;
     text-align: center;
     margin: auto;
@@ -328,7 +334,7 @@ div > a:hover{
 
 /* slides */
 
-.slide-foto{
+.slide-foto {
     max-width: 100%;
     border-radius: 2em;
 }
@@ -340,15 +346,16 @@ div > a:hover{
     position: relative;
     margin: auto;
     text-align: center;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -364,116 +371,265 @@ div > a:hover{
     background-color: rgb(0, 0, 0);
     margin-top: -22px;
     box-shadow: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+}
 
-  
-  /* Fading animation */
-  .fade {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 
-span:first-of-type{
+span:first-of-type {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 0s;
 }
-span:nth-of-type(2){
+
+span:nth-of-type(2) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: .2s;
 }
-span:nth-of-type(3){
+
+span:nth-of-type(3) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: .4s;
 }
-span:nth-of-type(4){
+
+span:nth-of-type(4) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: .6s;
 }
-span:nth-of-type(5){
+
+span:nth-of-type(5) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: .8s;
 }
-span:nth-of-type(6){
+
+span:nth-of-type(6) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 1s;
 }
-span:nth-of-type(7){
+
+span:nth-of-type(7) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 1.2s;
 }
-span:nth-of-type(8){
+
+span:nth-of-type(8) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 1.4s;
 }
-span:nth-of-type(9){
+
+span:nth-of-type(9) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 1.6s;
 }
-span:nth-of-type(10){
+
+span:nth-of-type(10) {
     animation-name: letter;
     animation-duration: 2s;
     animation-delay: 1.8s;
 }
 
+/* poppetje */
+
+#poppetje {
+    position: absolute;
+    transform: rotate(22deg);
+    right: -60vh;
+    z-index: 100;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.hoofd {
+    border-radius: 100%;
+    width: 17em;
+    height: 15em;
+    position: relative;
+    right: -1.3em;
+    top: 2em;
+
+}
+
+.lichaam {
+    clip-path: ellipse(25% 40% at 50% 50%);
+    width: 10em;
+    height: 10em;
+    background-color: black;
+    margin: auto;
+    top: -1em;
+    position: relative;
+
+}
+
+#arm {
+    width: 5em;
+    height: 10.5em;
+    top: -18em;
+    position: relative;
+    transform: rotate(-45deg);
+    right: -3em;
+
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: bottom right;
+    animation-delay: 1s;
+
+}
+
+.arm-animatie {
+    animation-name: arm;
+}
+
+.poppetje-animatie {
+    animation-name: hallo;
+}
+
+.hand {
+    width: 5em;
+    height: 5em;
+    top: -15em;
+    position: relative;
+    transform: rotate(-49deg);
+    right: 1em;
+
+}
+
+button {
+    position: absolute;
+    width: 8em;
+    height: 5em;
+    top: 0;
+    background-color: #a746ff;
+    right: 0;
+    border: none;
+}
+
+button:hover {
+    background-color: #7612d3;
+}
+
+button:active {
+    background-color: #350364;
+}
+
+@keyframes hallo {
+    0% {
+        transform: rotate(22deg);
+        right: -60vh;
+    }
+
+    100% {
+        transform: rotate(-23deg);
+        right: 0vh;
+    }
+}
+
+
+
+
+
+@keyframes arm {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    25% {
+        transform: rotate(-70deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+
+    75% {
+        transform: rotate(-70deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+
+
 @keyframes letter {
-    0%   {opacity: 100%;}
-    50% {opacity: 0%;}
-    100%   {opacity: 100%;}
-  }
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 
 
-  @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
-    .p-mij{
-        margin: .5em 2em ;
+    .p-mij {
+        margin: .5em 2em;
         font-size: 1em;
     }
-    
-    section > article:nth-of-type(2){
+
+    section>article:nth-of-type(2) {
         background-color: rgb(197, 127, 40);
         width: 100%;
         height: 100%;
 
     }
 
-    .mij-container{
+    .mij-container {
         flex-direction: column;
     }
-    
-    .mij-slide{
+
+    .mij-slide {
         width: 75%;
         align-self: center;
         margin: auto;
         margin-top: 1.5em;
     }
-    
-    .mij-text{
+
+    .mij-text {
         align-self: center;
         text-align: center;
         margin: auto;
@@ -497,10 +653,12 @@ span:nth-of-type(10){
         grid-template-columns: repeat(2, 1fr);
         gap: 8em 0em;
     }
-    section:nth-of-type(2){
+
+    section:nth-of-type(2) {
         height: 100%;
     }
-    div > a:last-of-type{
+
+    div>a:last-of-type {
         margin-bottom: 4em;
     }
 
@@ -513,25 +671,28 @@ span:nth-of-type(10){
         gap: 4em 0em;
         height: 100%;
     }
-    section:nth-of-type(2){
-        height: 100%;   
+
+    section:nth-of-type(2) {
+        height: 100%;
     }
-    div > a:last-of-type{
+
+    div>a:last-of-type {
         margin-bottom: 4em;
     }
 
-    .p-mij{
-        margin: .5em .1em ;
+    .p-mij {
+        margin: .5em .1em;
     }
 
-    .ml3{
+    .ml3 {
         font-size: 13vw;
     }
-    .ml4{
+
+    .ml4 {
         font-size: 7vw;
     }
 
-    
+
 
 }
 
