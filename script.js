@@ -28,7 +28,7 @@ button.addEventListener("click", function () {
   peek.play();
   setTimeout(function () {
     woosh.play();
-  }, 1000)
+  }, 800)
   poppetje.classList.add("poppetje-animatie");
   arm.classList.add("arm-animatie");
   button.style.display = "none";
