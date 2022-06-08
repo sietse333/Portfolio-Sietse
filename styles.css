@@ -314,7 +314,7 @@ div > a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    /* height: 50%; */
 }
 
 .mij-text{
