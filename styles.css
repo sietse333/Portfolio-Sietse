@@ -186,7 +186,7 @@ footer h3{
 
 .workwrapper{
     display: grid;
-    gap: 100px 0;
+    gap: 11vh 0;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     height: 90%;
@@ -194,8 +194,8 @@ footer h3{
 }
 
 div > a {
-    width: 14em;
-    height: 14em;
+    width: 30vh;
+    height: 30vh;
     transition: .5s ease-in-out;
     box-shadow: 9px 10px 15px #464646;
     border-radius: 1em;
@@ -481,11 +481,7 @@ span:nth-of-type(10){
         margin-bottom: 0;
 
     }
-    div > a {
-        width: 13em;
-        height: 13em;
 
-    }
 
     section:nth-of-type(3) {
         height: 100%;
