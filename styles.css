@@ -186,7 +186,7 @@ footer h3{
 
 .workwrapper{
     display: grid;
-    gap: 17em 0em;
+    gap: 100px 0;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     height: 90%;
@@ -194,8 +194,8 @@ footer h3{
 }
 
 div > a {
-    width: 15em;
-    height: 15em;
+    width: 15vw;
+    height: 15vw;
     transition: .5s ease-in-out;
     box-shadow: 9px 10px 15px #464646;
     border-radius: 1em;
