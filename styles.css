@@ -540,6 +540,8 @@ button {
     background-color: #a746ff;
     right: 0;
     border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
 }
 
 button:hover {
